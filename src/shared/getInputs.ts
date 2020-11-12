@@ -1,4 +1,3 @@
-import { context } from '@actions/github'
 import * as core from '@actions/core'
 
 
@@ -24,8 +23,8 @@ export const getCreateFileCommitMessage = (): string => core.getInput('create-fi
 
 export const getCustomNotSignedPrComment = (): string => core.getInput('custom-notsigned-prcomment', { required: false })
 
+export const getCustomPrSignComment = (): string => core.getInput('custom-pr-sign-comment', { required: false })
+
 export const getCustomAllSignedPrComment = (): string => core.getInput('custom-allsigned-prcomment', { required: false })
 
 export const getUseDcoFlag = (): string => core.getInput('use-dco-flag', { required: false })
-
-
